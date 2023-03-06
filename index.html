@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webshop</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav  class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top nav-shadow">
+      <div class="container">
+        <img class="logo-scale" src="img/logo1.png" alt="Rymo." />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><ion-icon name="menu-sharp" id="bar"></ion-icon></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <ion-icon name="search-outline" ></ion-icon>
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              
+            </li>
+            
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <div class="container-home">
+      <div class="banner-home">
+        <div class="banner-text">
+          <h2 style="color: white;">NEW ARRIVALS</h2>
+          <h1> <span style="color: white;"> BEST PRICE </span> THIS YEAR</h1>
+          <p class="d-none d-sm-block">Offering you very comfortable time
+            for walking and exercises.</p>
+            <button class="text-uppercase">Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAND -->
+    <section id="brand" class="container">
+      <div class="row m-0 py-5">
+        <img
+          class="logo-scale img-fluid col-lg-2 col-md-4 col-6"
+          src="img/brand/1.png"
+          alt=""
+        />
+        <img
+          class="logo-scale img-fluid col-lg-2 col-md-4 col-6"
+          src="img/brand/2.png"
+          alt=""
+        />
+        <img
+          class="logo-scale img-fluid col-lg-2 col-md-4 col-6"
+          src="img/brand/3.png"
+          alt=""
+        />
+        <img
+          class="logo-scale img-fluid col-lg-2 col-md-4 col-6"
+          src="img/brand/4.png"
+          alt=""
+        />
+        <img
+          class="logo-scale img-fluid col-lg-2 col-md-4 col-6"
+          src="img/brand/5.png"
+          alt=""
+        />
+        <img
+          class="logo-scale img-fluid col-lg-2 col-md-4 col-6"
+          src="img/brand/6.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- OFERTAS -->
+    <section id="new" class="w-100">
+      <div class="row p-0 m-0">
+        <div class="one col-lg-4 col-md-12 col-12 p-0">
+          <img class="img-fluid" src="img/new/andres-jasso-PqbL_mxmaUE-unsplash.jpg" alt="" />
+          <div class="details">
+            <h2>Extreme Rare Sneakers</h2>
+            <button class="text-uppercase">Shop Now</button>
+          </div>
+        </div>
+        <div class="one col-lg-4 col-md-12 col-12 p-0">
+          <img class="img-fluid" style="filter: grayscale(100%);" src="img/new/ryan-grice-VKDzcs8kD8E-unsplash.jpg" alt="" />
+          <div class="details">
+            <h2>Awesome Clothes</h2>
+            <button class="text-uppercase">Shop Now</button>
+          </div>
+        </div>
+        <div class="one col-lg-4 col-md-12 col-12 p-0">
+          <img class="img-fluid" src="img/new/vadim-paripa-LnX86TIccBA-unsplash.jpg" alt="" />
+          <div class="details">
+            <h2>Sportswear up to 50% Off</h2>
+            <button class="text-uppercase">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="clothes" class="my-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>Our Featured</h3>
+        <hr class="mx-auto" />
+        <p>Here you can check out our new products with fair price on rymo.</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/featured/1.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/featured/2.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/featured/3.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/featured/4.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+<div class="banner">
+  <div class="container-banner">
+    <div class="banner-txt ml-5">
+    <h4>MID SEASON'S SALE</h4>
+    <h1>Autumn Collection </br> UP TO 20% OFF</h1>
+    <button class="text-uppercase">Shop Now</button>
+  </div>
+  </div>
+</div>
+
+
+
+    <!-- CLOTHES -->
+    <section id="clothes" class="my-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>Dresses & T-shirts</h3>
+        <hr class="mx-auto" />
+        <p>Here you can check out our new products with fair price on rymo.</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/clothes/1.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/clothes/2.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/clothes/3.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/clothes/4.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WATCHES -->
+    <section id="watches" class="my-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>Best Watches</h3>
+        <hr class="mx-auto" />
+        <p>Here you can check out our new products with fair price on rymo.</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/watches/1.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/watches/2.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/watches/3.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="image-fluid" src="img/watches/4.jpg" alt="" />
+          <div class="star">
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+            <ion-icon name="star-sharp"></ion-icon>
+          </div>
+          <h5 class="p-name">Sport Boots</h5>
+          <h4 class="p-price">$92.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img src="img/logo2.png" alt="rymo." />
+          <p class="pt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+            sequi eaque sapiente et. Ipsum ducimus voluptates voluptatibus.
+          </p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Featured</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Clothes</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Contact Us</h5>
+          <div>
+            <h6 class="text-uppercase">Address</h6>
+            <p>123 Street Name, City, US</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">Phone</h6>
+            <p>(123) 456-7890</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">Email</h6>
+            <p>MAIL@EXAMPLE.COM</p>
+          </div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="img/insta/1.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="img/insta/2.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="img/insta/3.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="img/insta/4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <img src="img/payment.png" alt="" />
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+            <p class="p-footer">rymo eCommerce © 2023. All Rights Reserved.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
