@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details</title>
+    <title>Shopping Cart</title>
 
     <link
       rel="stylesheet"
@@ -22,35 +22,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
-  
-    <style>
-      .small-img-group {
-        display: flex;
-        justify-content: space-between;
-      }
 
-      .small-img-col{
-         flex-basis: 24%;
-         cursor: pointer;
-      }
-
-      .sproduct select {
-        display: block;
-        padding: 5px 10px;
-      }
-
-      .sproduct input {
-        width: 50px;
-        height: 40px;
-        padding-left: 10px;
-        font-size: 16px;
-        margin-right: 10px;
-      }
-      .sproduct input:focus {
-        outline: none;
-      }
-    </style>
-  
   </head>
 
 
@@ -99,110 +71,79 @@
           </div>
         </nav>
 
+  <!-- SHOPPING-CART -->
+        <section class="my-5 py-5">
+          <div class="container mt-5 py-5 shop-cart-m">
+            <h1 class="font-weight-bold text-dark">Shopping Cart</h1>
+            <hr>
+          </div>
+        </section>
 
-        <!-- PRODUCT DETAILS -->
-<section class="container sproduct my-5 pt-5">
-<div class="row mt-5">
-  <div class="col-lg-5 col-md-12 col-12">
-    <img id="product-img" class="image-fluid w-100 pb-1" src=""  alt="">
+<section id="cart-container" class="container my-5">
+  <table width="100%">
+    <thead>
+      <tr>
+        <td>Remove</td>
+        <td>Image</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Total</td>
+      </tr>
+    </thead>
+<tbody id="tBody">
+  <!-- <tr>
+    <td><a href="#"><ion-icon name="trash-outline"></ion-icon></a></td>
+    <td><img src="" alt=""></td>
+    <td><h5>Name</h5></td>
+    <td><h5>$Price</h5></td>
+    <td><input class="w-25 pl-1" value="1" type="number"></td>
+    <td><h5>Total</h5></td>
+  </tr> -->
+</tbody>
 
-    <div class="small-img-group">
-      <div class="small-img-col">
-        <img src="img/shop/1.jpg" width="100%" class="small-img" alt="">
-      </div>
-      <div class="small-img-col">
-        <img src="img/shop/24.jpg" width="100%" class="small-img" alt="">
-      </div>
-      <div class="small-img-col">
-        <img src="img/shop/25.jpg" width="100%" class="small-img" alt="">
-      </div>
-      <div class="small-img-col">
-        <img src="img/shop/26.jpg" width="100%" class="small-img" alt="">
-      </div>
+  </table>
+</section>
+
+<!-- COUPON -->
+<section id="cart-bottom" class="container">
+ <div class="row">
+   <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+     <div>
+       <h5>COUPON</h5>
+       <p>Enter your coupon code if you have one.</p>
+       <input type="text" placeholder="Coupon Code">
+       <button>APPLY COUPON</button>
+     </div>
     </div>
+
+    <!-- TOTAL -->
+
+    <div class="sub-total-div total col-lg-6 col-md-6 col-12">
+      <div>
+        <h5>CART TOTAL</h5>
+        <div class="d-flex justify-content-between">
+          <h6 id="sub-total">Subtotal</h6>
+          <p class="subtotal">$Price</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h6>Shipping</h6>
+          <p>$10,00</p>
+        </div>
+        <hr class="second-hr">
+        <div class="d-flex justify-content-between">
+          <h6>Total</h6>
+          <p class="sub-total-price">$TOTAL</p>
+        </div>
+
+        <button class="ml-auto">PROCEED TO CHECKOUT</button>
+      </div>
+
+     </div>
   </div>
-  <div class="col-lg-6 col-md-12 col-12">
-    <h6 id="path-name"></h6>
-    <h3 id="product-name" class="py-4"></h3>
-    <h2 id="product-price"></h2>
-    <select class="my-3">
-      <option> Select Size</option>
-      <option>XL</option>
-      <option>XXL</option>
-      <option>Small</option>
-      <option>Large</option>
-    </select>
-    <input type="number" value="1">
-    <button id="add-cart" class="buy-btn">Add to Cart</button>
-    <h4 class="mt-5 mb-5">Product Details</h4>
-    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur, minima alias autem ratione magnam impedit dolores, itaque exercitationem delectus fugit obcaecati sunt natus illo at cupiditate qui sapiente ut quo nam voluptas commodi? Ipsum fuga dolor tempore deserunt quasi natus veniam ex, commodi iste praesentium ratione, suscipit non reprehenderit magnam, esse impedit illum. Repellat saepe qui sit facilis porro.</span>
-  </div>
-</div>
 </section>
 
 
-<!-- RELATED -->
-<section id="clothes" class="my-5">
-  <div class="container text-center mt-5 py-5">
-    <h3>Related</h3>
-    <hr class="mx-auto" />
-    <p>Here you can check out our new products with fair price on rymo.</p>
-  </div>
-  <div class="row mx-auto container-fluid">
-    <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="image-fluid" src="img/featured/1.jpg"  alt="" />
-      <div class="star">
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-      </div>
-      <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
-      <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="image-fluid" src="img/featured/2.jpg" alt="" />
-      <div class="star">
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-      </div>
-      <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
-      <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="image-fluid" src="img/featured/3.jpg" alt="" />
-      <div class="star">
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-      </div>
-      <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
-      <button class="buy-btn">Buy Now</button>
-    </div>
-    <div class="product text-center col-lg-3 col-md-4 col-12">
-      <img class="image-fluid" src="img/featured/4.jpg" alt="" />
-      <div class="star">
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-        <ion-icon name="star-sharp"></ion-icon>
-      </div>
-      <h5 class="p-name">Sport Boots</h5>
-      <h4 class="p-price">$92.00</h4>
-      <button class="buy-btn">Buy Now</button>
-    </div>
-  </div>
-</section>
 
     <!-- FOOTER -->
     <footer class="mt-5 py-5">
@@ -288,9 +229,9 @@
       </div>
     </footer>
 
-    <script async src="./main.js"  type="module"></script>
     <script async src="./produto.js"  type="module"></script>
-    <script async src="./products.js" type="module"></script>
+    <script async src="./main.js"  type="module"></script>
+    <script async src="./cart.js"  type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -317,23 +258,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script>
-      var MainImg = document.getElementById('MainImg');
-      var smallimg = document.getElementsByClassName('small-img');
 
-      smallimg[0].onclick = function() {
-        MainImg.src = smallimg[0].src
-      }
-      smallimg[1].onclick = function() {
-        MainImg.src = smallimg[1].src
-      }
-      smallimg[2].onclick = function() {
-        MainImg.src = smallimg[2].src
-      }
-      smallimg[3].onclick = function() {
-        MainImg.src = smallimg[3].src
-      }
-      console.log(smalling)
-    </script> -->
   </body>
 </html>

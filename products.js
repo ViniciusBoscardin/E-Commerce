@@ -1,0 +1,138 @@
+export const PRODUTO = [
+  {
+    name: 'T-Shirt',
+    id: 0,
+    price: 50,
+    url: 'img/shop/1.jpg',
+    rank: 5,
+    quantidade: 0,
+  },
+
+  {
+    name: 'White Sneakers',
+    id: 2,
+    price: 65,
+    url: 'img/shop/2.jpg',
+    rank: 4,
+    quantidade: 0,
+  },
+
+  {
+    name: 'Sport Bag',
+    id: 3,
+    price: 92,
+    url: 'img/shop/3.jpg',
+    rank: 4,
+    quantidade: 0,
+  },
+  {
+    name: 'Blue Shoes',
+    id: 4,
+    price: 30,
+    url: 'img/shop/4.jpg',
+    rank: 3,
+    quantidade: 0,
+  },
+  {
+    name: 'Gray Winter',
+    id: 5,
+    price: 30,
+    url: 'img/shop/5.jpg',
+    rank: 5,
+    quantidade: 0,
+  },
+
+  {
+    name: 'Winter Coat',
+    id: 6,
+    price: 100,
+    url: 'img/shop/6.jpg',
+    rank: 2,
+    quantidade: 0,
+  },
+
+  {
+    name: 'Classic Shoes',
+    id: 7,
+    price: 40,
+    url: 'img/shop/7.jpg',
+    rank: 3,
+    quantidade: 0,
+  },
+  {
+    name: 'Snow Coat',
+    id: 8,
+    price: 120,
+    url: 'img/shop/8.jpg',
+    rank: 5,
+    quantidade: 0,
+  },
+  {
+    name: 'Wilderness Bag',
+    id: 9,
+    price: 50,
+    url: 'img/shop/9.jpg',
+    rank: 3,
+    quantidade: 0,
+  },
+
+  {
+    name: 'Brown Watch',
+    id: 10,
+    price: 93,
+    url: 'img/shop/10.jpg',
+    rank: 4,
+    quantidade: 0,
+  },
+
+  {
+    name: 'White Sneakers',
+    id: 10,
+    price: 53,
+    url: 'img/shop/12.jpg',
+    rank: 4,
+    quantidade: 0,
+  },
+  {
+    name: 'Chrome Dome',
+    id: 12,
+    price: 89,
+    url: 'img/shop/13.jpg',
+    rank: 3,
+    quantidade: 0,
+  },
+  {
+    name: 'Snowy Boots',
+    id: 13,
+    price: 120,
+    url: 'img/shop/14.jpg',
+    rank: 5,
+    quantidade: 0,
+  },
+
+  {
+    name: 'Winter Beanie',
+    id: 14,
+    price: 100,
+    url: 'img/shop/15.jpg',
+    rank: 5,
+    quantidade: 0,
+  },
+
+  {
+    name: 'Krusty Hat',
+    id: 15,
+    price: 40,
+    url: 'img/shop/18.jpg',
+    rank: 5,
+    quantidade: 0,
+  },
+  {
+    name: 'Ugly Shirt',
+    id: 16,
+    price: 25,
+    url: 'img/shop/23.jpg',
+    rank: 2,
+    quantidade: 0,
+  },
+];
