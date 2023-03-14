@@ -29,10 +29,17 @@ addCart.addEventListener('click', () => {
   // '!!' converter uma variável para ser um valor booleano (verdadeiro ou falso)
   if (!!cartProducts) {
     const jsonConvertLocal = JSON.parse(cartProducts);
+
     myCart.push(...jsonConvertLocal);
     // O método push adiciona valores a um array. Esse método é intencionalmente genérico. Podendo ser utilizado por call() ou apply() em objetos que implementam arrays. O método push depende da propriedade length para determinar onde começar a inserir os valores
   }
-  myCart.push(filterProduct);
+  const productIndex = myCart.findIndex((item) => item.id === filterProduct.id);
+  if (productIndex !== -1) {
+    myCart[productIndex].quantidade++;
+  } else {
+    myCart.push({ ...filterProduct, quantidade: ++filterProduct.quantidade });
+  }
+
   const converteJson = JSON.stringify(myCart);
   localStorage.setItem('cartProducts', converteJson);
 });
